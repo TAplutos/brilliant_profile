@@ -1,0 +1,3362 @@
+
+
+
+
+
+
+
+
+    
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="google" content="notranslate" />
+        <meta http-equiv="Content-Language" content="en_US" />
+
+        <title>Calculus Problem on Telescoping Series - Sum: Now there&#39;s an \(n\)? - Trevor Arashiro | Brilliant</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+        <meta property="fb:app_id" content="326254770799145" />
+        <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/eommhbliilafdkodaijeejngbjiiaccl">
+        
+            
+                <meta property="al:ios:url" content="com.brilliant.Brilliant://problems/now-theres-an-n/" />
+                <meta property="al:ios:app_store_id" content="913335252" />
+                <meta property="al:ios:app_name" content="Brilliant.org" />
+                <meta property="al:android:url" content="https://brilliant.org/problems/now-theres-an-n/">
+                <meta property="al:android:package" content="org.brilliant.android">
+                <meta property="al:android:app_name" content="Brilliant">
+            
+            
+                <link rel="canonical" href="now-theres-an-n.html">
+            
+            
+            
+            <link rel="alternate" href="android-app://org.brilliant.android/http/brilliant.org/problems/now-theres-an-n/">
+        
+
+        
+
+        <link rel="apple-touch-icon-precomposed" href="https://brilliant.org/apple-touch-icon-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="https://brilliant.org/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="https://brilliant.org/apple-touch-icon-76x76-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="https://brilliant.org/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="https://brilliant.org/apple-touch-icon-120x120-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="https://brilliant.org/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="https://brilliant.org/apple-touch-icon-152x152-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="https://brilliant.org/apple-touch-icon-180x180-precomposed.png">
+
+        
+    
+        
+    
+
+        
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="../../site_media/build/dist/brilliant_desktop.08841363eec0424ed68d.css" rel="stylesheet" media="all" type="text/css">
+
+
+
+    
+    
+
+
+    
+    
+    
+    
+
+
+        
+        
+        <!--[if lt IE 6]><script type="text/javascript">var ie_version = -1;</script><![endif]-->
+        <!--[if IE 6]><script type="text/javascript">var ie_version = 6;</script><![endif]-->
+        <!--[if IE 7]><script type="text/javascript">var ie_version = 7;</script><![endif]-->
+        <!--[if IE 8]><script type="text/javascript">var ie_version = 8;</script><![endif]-->
+        <!--[if IE 9]><script type="text/javascript">var ie_version = 9;</script><![endif]-->
+
+        
+        
+
+
+    <script type="text/javascript">
+        (function (w, loc) {
+            var u = /ds055uzetaobb\.cloudfront\.net|d18l82el6cdm1i\.cloudfront\.net/;
+            if(u.test(loc.host)){ w.location=loc.protocol+'//brilliant.org'+loc.pathname;}
+        })(window,window.location);
+    </script>
+
+
+        
+
+        <noscript>
+            <style>.cmp-deferred .no-js{display:block !important;}</style>
+        </noscript>
+
+    </head>
+
+        
+        <body class="no-js
+                use_katex
+                
+                
+                active
+                
+                
+                
+                b2
+                
+                enable-remind-share-buttons
+                solv-page endstate
+                fonts
+                hdr-big"
+            data-is-mobile="false"
+            
+            data-app-version="0.0.0"
+            data-user="12320532"
+            data-media-host="https://ds055uzetaobb.cloudfront.net"
+            data-third-party-cookies-enabled="true">
+
+        
+        <!-- site_is_live -->
+        
+
+            
+            
+
+            
+
+            
+
+                
+                    <div id="header" class="site-header">
+                        
+    
+                            
+                                
+
+<div class="container">
+    <div class="hdr-logo col col-3">
+        
+            <a href="https://brilliant.org/daily-problems/" class="css-sprite-logos">Brilliant</a>
+        
+    </div>
+
+    
+        
+
+
+
+
+
+
+
+
+
+<div class="hdr-links">
+
+    <span class="hdr-link">
+        <a href="https://brilliant.org/daily-problems/">
+            Today
+        </a>
+    </span>
+
+    <span class="hdr-link">
+        <a href="https://brilliant.org/courses/" class="">
+            Courses
+        </a>
+    </span>
+
+    
+    
+        <div id="topic-list" class="hdr-expandable" data-controller="app/header:topicsNav">
+            
+                <span class="hdr-link">
+                    
+                    <a href="https://brilliant.org/algebra/" class="toggle active">
+                        Practice
+                    </a>
+                </span>
+            
+            <div>
+                <ul class="unstyled col-8">
+                    <li class="clearfix"><a href="https://brilliant.org/algebra/" data-tag-url="/algebra/" class=""><span class="hdr-topic-icon algebra"></span>
+                Algebra
+            </a></li><li class="clearfix"><a href="https://brilliant.org/geometry/" data-tag-url="/geometry/" class=""><span class="hdr-topic-icon geometry"></span>
+                Geometry
+            </a></li><li class="clearfix"><a href="https://brilliant.org/number-theory/" data-tag-url="/number-theory/" class=""><span class="hdr-topic-icon number-theory"></span>
+                Number Theory
+            </a></li><li class="clearfix"><a href="https://brilliant.org/calculus/" data-tag-url="/calculus/" class=""><span class="hdr-topic-icon calculus"></span>
+                Calculus
+            </a></li><li class="clearfix"><a href="https://brilliant.org/discrete-mathematics/" data-tag-url="/discrete-mathematics/" class=""><span class="hdr-topic-icon discrete-mathematics"></span>
+                Probability
+            </a></li><li class="clearfix"><a href="https://brilliant.org/basic-mathematics/" data-tag-url="/basic-mathematics/" class=""><span class="hdr-topic-icon basic-mathematics"></span>
+                Basic Mathematics
+            </a></li><li class="clearfix"><a href="https://brilliant.org/logic/" data-tag-url="/logic/" class=""><span class="hdr-topic-icon logic"></span>
+                Logic
+            </a></li><li class="clearfix"><a href="https://brilliant.org/mechanics/" data-tag-url="/mechanics/" class=""><span class="hdr-topic-icon mechanics"></span>
+                Classical Mechanics
+            </a></li><li class="clearfix"><a href="https://brilliant.org/electricity-and-magnetism/" data-tag-url="/electricity-and-magnetism/" class=""><span class="hdr-topic-icon electricity-and-magnetism"></span>
+                Electricity and Magnetism
+            </a></li><li class="clearfix"><a href="https://brilliant.org/computer-science/" data-tag-url="/computer-science/" class=""><span class="hdr-topic-icon computer-science"></span>
+                Computer Science
+            </a></li><li class="clearfix"><a href="https://brilliant.org/quantitative-finance/" data-tag-url="/quantitative-finance/" class=""><span class="hdr-topic-icon quantitative-finance"></span>
+                Quantitative Finance
+            </a></li><li class="clearfix"><a href="https://brilliant.org/chemistry/" data-tag-url="/chemistry/" class=""><span class="hdr-topic-icon chemistry"></span>
+                Chemistry
+            </a></li>
+
+                </ul>
+            </div>
+        </div>
+
+        
+    
+</div>
+
+
+        
+    
+
+    <div id="cmp_profile_streak_id">
+        
+
+
+    </div>
+</div>
+
+                            
+                        
+
+                    </div>
+                
+
+            
+
+            
+
+            
+                
+            
+
+            <div id="system-msgs" class="row clearfix">
+                
+                    
+
+                    
+
+                    
+
+                    
+                        
+                        
+                        
+                    
+                
+            </div>
+            <div id="post-header">
+                
+            </div>
+
+            <div id="wrapper"
+                 class="container clearfix"
+                 data-controller="">
+
+                
+                    
+                
+
+                
+
+    
+        
+
+
+
+
+
+
+
+
+<div class="solv-container col col-12 col-last">
+
+    <div class="solv-main clearfix solutions"
+            id="solv-main"
+            data-controller="app/solvables:solvableRedesign,util/popstate:handler"
+            data-full-url="/problems/now-theres-an-n/"
+            data-solvable="49720">
+
+        
+            <div id="cmp_assessment_public_solvable_logged_in_id">
+                
+
+
+    
+
+
+<div class="solv-header clearfix"
+    >
+
+    <div class="old-title-display">
+        <h1>Now there&#39;s an <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span>?</h1>
+        
+    </div>
+
+    
+
+
+    
+        <div class="topic-level-info row">
+            
+                <span><strong>
+                    
+                        <a href="https://brilliant.org/calculus/">
+                            Calculus</a>
+                    
+                </strong></span>
+            
+
+            <span class="level-text" title="135 points">
+                Level
+                
+                    4
+                
+            </span>
+        </div>
+    
+</div>
+
+
+
+
+    <div class="solv-problem col col-7">
+        
+
+<div class="solv-content">
+    
+        
+    
+
+    
+        
+            
+
+
+
+    <div class="question-text latex">
+        
+
+
+
+
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathsize="1.2em"><mstyle scriptlevel="0" displaystyle="true"><munderover><mo>∑</mo><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mstyle scriptlevel="0" displaystyle="true"><msub><mo><mi>log</mi><mo>⁡</mo></mo><mi>n</mi></msub><mrow><mo fence="true">(</mo><mfrac><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mi>a</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mi>a</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mi>a</mi><mo>−</mo><mn>3</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mi>a</mi><mo>+</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></mfrac><mo fence="true">)</mo></mrow><mo>=</mo><mn>1</mn></mstyle></mstyle></mstyle></mrow><annotation encoding="application/x-tex">\large\displaystyle \sum_{x=1}^{\infty} \displaystyle \log_{n}\left(\frac{(x+a-1)(x+a+1)}{(x+a-3)(x+a+3)}\right)=1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:3.46446em;vertical-align:-1.500006em;"></span><span class="mop op-limits sizing reset-size6 size7"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.637045em;"><span style="top:-2.049995em;margin-left:0em;"><span class="pstrut" style="height:3.2em;"></span><span class="sizing reset-size7 size4 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">x</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.200005em;"><span class="pstrut" style="height:3.2em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.450005em;margin-left:0em;"><span class="pstrut" style="height:3.2em;"></span><span class="sizing reset-size7 size4 mtight"><span class="mord mtight"><span class="mord mtight">∞</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.250005em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop sizing reset-size6 size7"><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.04526666666666668em;"><span style="top:-2.5582266666666666em;margin-right:0.04166666666666667em;"><span class="pstrut" style="height:2.8em;"></span><span class="sizing reset-size7 size4 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.24177333333333334em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner sizing reset-size6 size7"><span class="mopen sizing reset-size7 size6 delimcenter" style="top:-0.04999999999999999em;"><span class="delimsizing size4">(</span></span><span class="mord"><span class="mopen nulldelimiter sizing reset-size7 size6"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.427em;"><span style="top:-2.5140000000000002em;"><span class="pstrut" style="height:3.2em;"></span><span class="mord"><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">3</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">3</span><span class="mclose">)</span></span></span><span style="top:-3.43em;"><span class="pstrut" style="height:3.2em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.8770000000000002em;"><span class="pstrut" style="height:3.2em;"></span><span class="mord"><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter sizing reset-size7 size6"></span></span><span class="mclose sizing reset-size7 size6 delimcenter" style="top:-0.04999999999999999em;"><span class="delimsizing size4">)</span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel sizing reset-size6 size7">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.773328em;vertical-align:0em;"></span><span class="mord sizing reset-size6 size7">1</span></span></span></span></span></p>
+
+<p>Solve for the maximum positive integral value of <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span> such that there is exactly 1 positive rational solution for <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span></span></span></span>. </p>
+
+<hr />
+
+<p><a target="_blank" rel="nofollow" href="https://brilliant.org/problems/i-dont-think-the-a-should-be-there/?group=LvMqzvT2YMY9">Here</a> is an easier version.</p>
+
+
+    </div>
+
+
+        
+    
+</div>
+
+    </div>
+
+
+
+    
+
+
+
+    
+        <div class="col col-3 col-last">
+            <div class="solv-details clearfix endstate correct" data-solvable="49720">
+
+                
+                    
+
+
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+<SCRIPT type="text/template"
+    id="ir_template_holder"
+    data-controller="app/instant_response:init"
+    data-salt="bk2qq7nyriiQjQew8YCtW261HQTVvGqZ"
+    data-hash="3a988a3a5848c9df6df840b0e53d44e4e37fb6f3"
+    data-tries-left="0"
+    data-answers-list="210"
+    data-is-mcq="false"
+    data-has-multiple-options="false"
+    data-problem-type="int"
+    data-attempt-number="3"
+    data-user-is-active="true"
+    data-export-only="false" 
+    data-is-float="false"
+    data-solvable="49720"
+    data-is-practice-section="false"
+    data-interactive="false"
+    >
+
+
+
+    <% if (canStillAnswer) { %>
+
+        
+            
+                <div class="solv-form clearfix"
+                    data-controller="app/solvables:answerFormWrapper"
+                    data-solvable="49720">
+
+                    
+                        
+<% if (canStillAnswer && triesLeft > 0) { %>
+
+
+    <% if (attemptNumber > 0) { %>
+        <% if (alreadyTriedThisAnswer) { %>
+            <p class="solv-form-text<%= (attemptNumber > 0 ? ' incorrect' : '' ) %>">
+                You already tried that answer!
+            </p>
+        <% } else { %>
+            <p class="solv-form-text<%= (attemptNumber > 0 ? ' incorrect' : '' ) %>">
+                <%= answersListWithAnd() %>
+                <%= attemptNumber == 1 ? 'is' : 'are'  %>
+                incorrect.
+            </p>
+        <% } %>
+    <% } %>
+
+    <p class="solv-tries-left">
+        
+            <% if (triesLeft === 1) { %>
+                1 try left.
+            <% } else { %>
+                <%= triesLeft %> tries left.
+            <% } %>
+        
+    </p>
+
+<% } %>
+
+                        
+
+<form action="now-theres-an-n.html#" novalidate>
+
+    <input type="hidden" name="csrfmiddlewaretoken" value="Xt9L3pvlclwraZoIr0makvgNGLs2vmTOQFVsg0qdJ3yYTt8yDWVa1CRCHyDD3nHC">
+    <input type="hidden" name="form_name" value="attempt">
+
+    <div class="fields">
+        
+            
+                <input type="hidden" name="page_key" value="assessment_public_solvable_logged_in" id="id_page_key">
+            
+        
+            
+                <input type="hidden" name="param_key" id="id_param_key">
+            
+        
+            
+                <input type="hidden" name="version" value="1" id="id_version">
+            
+        
+            
+                <input type="hidden" name="a_id" value="529719394" id="id_a_id">
+            
+        
+            
+                
+                    <input type="text"
+                        autocomplete="off"
+                        value="<% if(validationError) { print(answer); } %>"
+                        disabled="disabled"
+                        id="id-answer-instant">
+
+                    <% if(validationError) { %>
+                        <ul class="under-field-text unstyled row">
+                            <li>
+                                    <% if(answer === '') { %>
+                                        This field is required
+                                    <% } else { %>
+                                        Answer must be an integer
+                                    <% } %>
+                                
+                            </li>
+                        </ul>
+                    <% } else { %>
+                        
+                    <% } %>
+                
+            
+        
+    </div>
+
+    <div class="submit row">
+        <button class="btn btn-accent btn-submit active" disabled="disabled">
+            Submit
+        </button>
+    </div>
+</form>
+                    
+                </div>
+            
+        
+
+    <% } else { %>
+
+        
+            <div class="clearfix">
+                
+
+                <h3 class="row">
+                    <% if (answerIsCorrect) { %>
+                        Correct!<span class="css-sprite-solvables tada"></span>
+                    <% } else if (viewedSolution) { %>
+                        You <span class="css-sprite-solvables eyes"></span> the
+                        
+                            solution.
+                        
+                        <br>
+                        <em>Learn something new every day!</em>
+                    <% } else if (!interactive) { %>
+                        Incorrect.<span class="css-sprite-solvables point-down"></span>
+                        <br>
+                        <em>Getting stumped is part of learning!</em>
+                    <% } %>
+
+                    
+                        
+                            <% if (answerIsCorrect && !interactive) { %>
+                                <br>The answer is <%= answer %>.
+                            <% } %>
+                        
+                    
+                </h3>
+            </div>
+
+            
+                <div class="more-details">
+                    
+                        <% if (answerIsCorrect) { %>
+                            <p>33% of people got this right.</p>
+                        <% } %>
+                    
+                </div>
+            
+        
+
+    <% } %>
+
+    
+        <div class="solv-details-footer">
+            
+                <% if (!canStillAnswer) { %>
+                    
+                        <button class="btn btn-accent esr-problem disabled">
+                            Continue
+                        </button>
+                    
+                <% } %>
+            
+
+            
+                <div class="solution-button-wrapper has-wiki">
+                    <button class="btn disabled">
+                        
+                            
+                                Discuss solution
+                            
+                        
+                    </button>
+                </div>
+            
+
+            
+                <div class="wiki-button-wrapper">
+                    <button class="btn disabled">View wiki</button>
+                </div>
+            
+
+            
+
+
+
+
+
+            
+                <div class="solv-ir-loading row">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            
+        </div>
+    
+
+
+
+</SCRIPT>
+
+    
+
+
+
+    
+
+    
+        
+            
+
+
+<div class="clearfix"
+    >
+    
+
+    
+        <h3 class="row">
+            
+    
+
+            
+                <br>The answer is 210.
+            
+        </h3>
+
+        
+    
+</div>
+
+
+    <div class="solv-details-footer"
+        data-controller="app/solvables:endstate">
+
+        
+            
+        
+
+        
+    
+
+
+        
+            
+
+    <div class="wiki-button-wrapper">
+        <a href="https://brilliant.org/wiki/telescoping-series/"
+           class="btn ax-click"
+           target="_blank"
+           data-ax-type="link"
+           data-ax-id="clicked_wiki_link_desktop">
+
+            View wiki
+        </a>
+    </div>
+
+
+        
+
+        
+
+
+
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+
+
+
+
+
+
+                
+            </div>
+        </div>
+    
+
+
+
+    
+
+    
+        
+
+
+
+<div class="solv-footer row clearfix ">
+    
+        <div class="solv-author">
+
+            
+                <div class="cmp_assessment_recently_solved_by_logged_out_id"
+                    data-solvable="49720">
+
+                    
+                </div>
+            
+
+            <div class="author-container clearfix">
+                
+
+
+    
+    
+    
+    
+    
+    
+    
+        
+            <a href="https://brilliant.org/profile/trevor-t668xm/"
+                class="author avatar mini-profile"
+                data-id="XTwHRkXvAIXKejyQUwFbpD3IuISUn7O8"
+                data-controller="app/mini_profiles:controller">
+                    <img src="../../brioche/avatars-2/resized/45/21df9575b5ae6152b965c65a400a7835.21df9575b5ae6152b965c65a400a7835.jpg?width=45" alt="Trevor Arashiro" width="45" height="45"></a>
+        
+
+        <span class="text">
+            
+
+                by
+                
+                    <a href="https://brilliant.org/profile/trevor-t668xm/"
+                        class="btn-profile mini-profile"
+                        title="Trevor Arashiro"
+                        data-id="XTwHRkXvAIXKejyQUwFbpD3IuISUn7O8"
+                        data-controller="app/mini_profiles:controller">
+                
+                
+                        Trevor Arashiro</a>,
+                            
+                                22,
+                            
+                            <span title="USA">USA</span>
+                     
+                     
+                     
+
+             
+        </span>
+     
+     
+     
+     
+     
+     
+     
+
+
+
+                
+                    <div class="likes-container">
+                        
+
+                        
+
+                        
+                    </div>
+                
+            </div>
+
+        </div>
+    
+
+    
+        
+    
+</div>
+
+    
+
+
+
+
+
+
+
+
+    <div id="solvable-data"
+        data-num-solutions="1"
+        data-answer-is-correct="true"
+        data-attempt-number="3"
+        data-can-still-answer="false">
+    </div>
+    
+
+    
+        
+<div id="mentions-data"
+    data-url="/mentions/candidates/"
+    
+        data-id="49720"
+    
+    data-type="solvable">
+</div>
+    
+
+
+
+    <form action="now-theres-an-n.html"
+    method="post"
+    id="enter-dispute-discussions-form"
+    class="hide"
+    data-solvable-id="49720"
+    data-controller="app/solvables:enterDisputeDiscussionsForm">
+
+    <input type="hidden" name="csrfmiddlewaretoken" value="Xt9L3pvlclwraZoIr0makvgNGLs2vmTOQFVsg0qdJ3yYTt8yDWVa1CRCHyDD3nHC">
+    <input type="hidden" name="page_key" value="assessment_public_solvable_logged_in" id="id_page_key"><input type="hidden" name="param_key" id="id_param_key"><input type="hidden" name="version" value="1" id="id_version">
+    <input name="form_name" value="see_dispute_discussions" type="hidden"/>
+</form>
+
+
+
+
+
+
+
+<div id="attempt-number" data-attempt-number="3"></div>
+
+            </div>
+        
+
+        
+            
+                <div class="hide"
+                    
+                    data-solvable="49720">
+                        
+                        
+<div class="cmp-deferred"
+    data-cmp_url="/problems/now-theres-an-n/recently_solved_by/?"
+    data-cmp_page_key="assessment_public_solvable_logged_in"
+    data-cmp_component_key="assessment_recently_solved_by_logged_out"
+    >
+
+    <div class="js hide-on-error"></div>
+
+    
+        <div class="no-js">
+            <p>
+                <strong>This section requires Javascript.</strong><br>
+                You are seeing this because something didn't load right. We suggest you, (a) try
+                refreshing the page, (b) enabling javascript if it is disabled on your browser and,
+                finally, (c) <a href="https://brilliant.org/problems/now-theres-an-n/?no_js=true">loading the
+                non-javascript version of this page</a>. We're sorry about the hassle.
+            </p>
+        </div>
+    
+</div>
+
+                </div>
+            
+        
+
+        
+            <div class="solv-solutions row"
+                id="solutions-scrollable-container">
+
+                <div id="cmp_solutiondiscussions_publicsolvableaddsolutionpost_id">
+                    
+                </div>
+                <div id="cmp_groups_groupsolvableaddsolutionpost_id">
+                    
+                </div>
+
+                
+                    <div id="cmp_assessment_end_state_header_id">
+                        
+<div class="solv-end-state-header row">
+    
+    
+
+
+<div class="discsol-list-header row">
+    <h2>
+        
+            
+                1 solution
+            
+        
+    </h2>
+
+    
+        <h3>
+            
+                
+            
+        </h3>
+    
+</div>
+
+
+    
+    
+</div>
+
+                    </div>
+                
+
+                <div id="cmp_solutiondiscussions_publicsolvablesolutionlist_id">
+                    
+                        
+
+<div class="cmp_a7098d709abc6dc8fce5d3ee79910a60_id">
+
+
+<div class="discsol-list row" data-controller="app/solution_discussions:comments">
+
+    
+        
+
+        
+
+        
+            
+                
+            
+            
+
+
+
+
+
+
+
+
+<div
+    class="discsol-post-wrapper row "
+    
+>
+    <div id="post-95769" class="discsol-post solution cmmnt row clearfix has-text-formatting-bar">
+        <div class="solution-main row">
+
+            
+                
+                    
+                        <div class="solution-header with-actions row">
+
+                            
+                                <div class="avatar mini-profile">
+                                    
+                                        <img src="../../site_media/images/default-avatar-globe.png" alt="" width="45" height="45">
+                                    
+                                </div>
+
+                                <div class="text"><div>
+                                        
+                                            <a href="https://brilliant.org/profile/brian-rk21ea/"
+                                                rel="nofollow"
+                                                class="btn-profile mini-profile"
+                                                data-id="4w0Tpq7bHfBJU6a6Y8ZxzzWxip91UkCO"
+                                                data-controller="app/mini_profiles:controller">
+                                                    Brian Charlesworth
+                                            </a>
+                                        
+                                        
+                                        <br>
+                                        
+                                            <span title="May 10, 2015, 11:44 a.m.">May 10, 2015</span>
+                                        
+                                </div></div>
+                            
+
+                            
+                            
+                            
+                        </div>
+                    
+                
+            
+
+            <div class="edit-subscribe hide-on-edit hide-on-delete">
+                
+                
+
+                
+                
+
+                
+            </div>
+
+
+            
+
+            <div class="comment-content solution-content row">
+                <div class="hide-on-edit hide-on-delete row">
+                    
+
+                        
+                        
+                            <div class="text">
+                                
+                                
+                                
+                                    
+                                        <p>Note first that the sum of a series of logs (of the same base) is equal to the log of the product of those terms. Now we can write this product as</p>
+
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle displaystyle="true" scriptlevel="0"><mfrac><mrow><mi>a</mi><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo></mrow><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></mfrac></mstyle><mo>∗</mo><mstyle displaystyle="true" scriptlevel="0"><mfrac><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mn>3</mn><mo stretchy="false">)</mo></mrow><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mn>5</mn><mo stretchy="false">)</mo></mrow></mfrac></mstyle><mo>∗</mo><mstyle displaystyle="true" scriptlevel="0"><mfrac><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mn>4</mn><mo stretchy="false">)</mo></mrow><mrow><mi>a</mi><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mn>6</mn><mo stretchy="false">)</mo></mrow></mfrac></mstyle><mo>∗</mo><mstyle displaystyle="true" scriptlevel="0"><mfrac><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mn>3</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mn>5</mn><mo stretchy="false">)</mo></mrow><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mn>7</mn><mo stretchy="false">)</mo></mrow></mfrac></mstyle><mo>∗</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">\dfrac{a(a + 2)}{(a - 2)(a + 4)}*\dfrac{(a + 1)(a + 3)}{(a - 1)(a + 5)}*\dfrac{(a + 2)(a + 4)}{a(a + 6)}*\dfrac{(a + 3)(a + 5)}{(a + 1)(a + 7)}*.....</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.363em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.427em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">2</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">4</span><span class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">2</span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:2.363em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.427em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">5</span><span class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">3</span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:2.363em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.427em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">6</span><span class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">2</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">4</span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:2.363em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.427em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">7</span><span class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">3</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">5</span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.10556em;vertical-align:0em;"></span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span></span></span></span></p>
+
+<p>This is a telescoping product that leaves us with the equation</p>
+
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mo><mi>log</mi><mo>⁡</mo></mo><mi>n</mi></msub><mrow><mo fence="true">(</mo><mstyle displaystyle="true" scriptlevel="0"><mfrac><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mn>3</mn><mo stretchy="false">)</mo></mrow><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>a</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mfrac></mstyle><mo fence="true">)</mo></mrow><mo>=</mo><mn>1</mn><mo>⟹</mo><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mn>3</mn><mo stretchy="false">)</mo><mo>=</mo><mi>n</mi><mo stretchy="false">(</mo><mi>a</mi><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>a</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\log_{n}\left(\dfrac{(a + 2)(a + 3)}{(a - 2)(a - 1)}\right) = 1 \Longrightarrow (a + 2)(a + 3) = n(a - 2)(a - 1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.40003em;vertical-align:-0.95003em;"></span><span class="mop"><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.057252em;"><span style="top:-2.4558600000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.24414em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">(</span></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.427em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">2</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">2</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">3</span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">)</span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.66844em;vertical-align:-0.024em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">⟹</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">2</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">3</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">n</span><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">2</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span></p>
+
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>⟹</mo><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><mo stretchy="false">(</mo><mn>3</mn><mi>n</mi><mo>+</mo><mn>5</mn><mo stretchy="false">)</mo><mi>a</mi><mo>+</mo><mn>2</mn><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>3</mn><mo stretchy="false">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\Longrightarrow (n - 1)a^{2} - (3n + 5)a + 2(n - 3) = 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.549em;vertical-align:-0.024em;"></span><span class="mrel">⟹</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">3</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">5</span><span class="mclose">)</span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">2</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">3</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span></p>
+
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>⟹</mo><mi>a</mi><mo>=</mo><mstyle displaystyle="true" scriptlevel="0"><mfrac><mrow><mo stretchy="false">(</mo><mn>3</mn><mi>n</mi><mo>+</mo><mn>5</mn><mo stretchy="false">)</mo><mo>±</mo><msqrt><mrow><mo stretchy="false">(</mo><mn>3</mn><mi>n</mi><mo>+</mo><mn>5</mn><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo>−</mo><mn>8</mn><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></msqrt></mrow><mrow><mn>2</mn><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\Longrightarrow a = \dfrac{(3n + 5) \pm \sqrt{(3n + 5)^{2} - 8(n - 1)(n - 3)}}{2(n - 1)}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.549em;vertical-align:-0.024em;"></span><span class="mrel">⟹</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.566em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.63em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.6950000000000003em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mopen">(</span><span class="mord">3</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">5</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">±</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.935em;"><span class="svg-align" style="top:-3.2em;"><span class="pstrut" style="height:3.2em;"></span><span class="mord" style="padding-left:1em;"><span class="mopen">(</span><span class="mord">3</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">5</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">8</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">3</span><span class="mclose">)</span></span></span><span style="top:-2.8950000000000005em;"><span class="pstrut" style="height:3.2em;"></span><span class="hide-tail" style="min-width:1.02em;height:1.28em;"><svg width='400em' height='1.28em' viewBox='0 0 400000 1296' preserveAspectRatio='xMinYMin slice'><path d='M263,681c0.7,0,18,39.7,52,119c34,79.3,68.167,
+158.7,102.5,238c34.3,79.3,51.8,119.3,52.5,120c340,-704.7,510.7,-1060.3,512,-1067
+c4.7,-7.3,11,-11,19,-11H40000v40H1012.3s-271.3,567,-271.3,567c-38.7,80.7,-84,
+175,-136,283c-52,108,-89.167,185.3,-111.5,232c-22.3,46.7,-33.8,70.3,-34.5,71
+c-4.7,4.7,-12.3,7,-23,7s-12,-1,-12,-1s-109,-253,-109,-253c-72.7,-168,-109.3,
+-252,-110,-252c-10.7,8,-22,16.7,-34,26c-22,17.3,-33.3,26,-34,26s-26,-26,-26,-26
+s76,-59,76,-59s76,-60,76,-60z M1001 80H40000v40H1012z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.30499999999999994em;"><span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></p>
+
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>⟹</mo><mi>a</mi><mo>=</mo><mstyle displaystyle="true" scriptlevel="0"><mfrac><mrow><mo stretchy="false">(</mo><mn>3</mn><mi>n</mi><mo>+</mo><mn>5</mn><mo stretchy="false">)</mo><mo>±</mo><msqrt><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mn>62</mn><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msqrt></mrow><mrow><mn>2</mn><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mfrac></mstyle><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">\Longrightarrow a = \dfrac{(3n + 5) \pm \sqrt{n^{2} + 62n + 1}}{2(n - 1)}.</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.549em;vertical-align:-0.024em;"></span><span class="mrel">⟹</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.526389em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.590389em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mopen">(</span><span class="mord">3</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">5</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">±</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.913389em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">6</span><span class="mord">2</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span></span></span><span style="top:-2.873389em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,
+-10,-9.5,-14c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54c44.2,-33.3,65.8,
+-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10s173,378,173,378c0.7,0,
+35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429c69,-144,104.5,-217.7,106.5,
+-221c5.3,-9.3,12,-14,20,-14H400000v40H845.2724s-225.272,467,-225.272,467
+s-235,486,-235,486c-2.7,4.7,-9,7,-19,7c-6,0,-10,-1,-12,-3s-194,-422,-194,-422
+s-65,47,-65,47z M834 80H400000v40H845z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.12661100000000003em;"><span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord">.</span></span></span></span></p>
+
+<p>Now in order for <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span></span></span></span> to be rational with <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span> being integral we will require that  the polynomial under the square root sign be a perfect square, i.e.,</p>
+
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mn>62</mn><mi>n</mi><mo>+</mo><mn>1</mn><mo>=</mo><msup><mi>m</mi><mn>2</mn></msup><mo>⟹</mo><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>31</mn><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo>−</mo><mn>960</mn><mo>=</mo><msup><mi>m</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">n^{2} + 62n + 1 = m^{2} \Longrightarrow (n + 31)^{2} - 960 = m^{2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">6</span><span class="mord">2</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.838108em;vertical-align:-0.024em;"></span><span class="mord"><span class="mord mathdefault">m</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">⟹</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord">3</span><span class="mord">1</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">9</span><span class="mord">6</span><span class="mord">0</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">m</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></span></p>
+
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>⟹</mo><mo stretchy="false">[</mo><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>31</mn><mo stretchy="false">)</mo><mo>+</mo><mi>m</mi><mo stretchy="false">]</mo><mo stretchy="false">[</mo><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>31</mn><mo stretchy="false">)</mo><mo>−</mo><mi>m</mi><mo stretchy="false">]</mo><mo>=</mo><mn>960</mn><mo>=</mo><msup><mn>2</mn><mn>6</mn></msup><mo>×</mo><mn>3</mn><mo>×</mo><mn>5.</mn></mrow><annotation encoding="application/x-tex">\Longrightarrow [(n + 31) + m][(n + 31) - m] = 960 = 2^{6} \times 3 \times 5.</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.549em;vertical-align:-0.024em;"></span><span class="mrel">⟹</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">3</span><span class="mord">1</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">m</span><span class="mclose">]</span><span class="mopen">[</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">3</span><span class="mord">1</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">m</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">9</span><span class="mord">6</span><span class="mord">0</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">6</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">5</span><span class="mord">.</span></span></span></span></p>
+
+<p>Now if we choose divisor pairs <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">b</span></span></span></span> we will end up with the pair of equations</p>
+
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>31</mn><mo stretchy="false">)</mo><mo>+</mo><mi>m</mi><mo>=</mo><mi>a</mi><mo separator="true">,</mo><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>31</mn><mo stretchy="false">)</mo><mo>−</mo><mi>m</mi><mo>=</mo><mi>b</mi><mo>⟹</mo><mi>n</mi><mo>=</mo><mstyle displaystyle="true" scriptlevel="0"><mfrac><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mn>2</mn></mfrac></mstyle><mo>−</mo><mn>31.</mn></mrow><annotation encoding="application/x-tex">(n + 31) + m = a, (n + 31) - m = b \Longrightarrow n = \dfrac{a + b}{2} - 31.</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">3</span><span class="mord">1</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">a</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">3</span><span class="mord">1</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.71844em;vertical-align:-0.024em;"></span><span class="mord mathdefault">b</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">⟹</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.05744em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.37144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord mathdefault">b</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span><span class="mord">1</span><span class="mord">.</span></span></span></span></p>
+
+<p>This value is integral and maximized when <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a + b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">b</span></span></span></span> is even and when <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">b</span></span></span></span> are as "far apart" as possible. The most "far apart" divisor pair is <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo stretchy="false">(</mo><mn>960</mn><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">)</mo><mo separator="true">,</mo></mrow><annotation encoding="application/x-tex">(960,1),</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">9</span><span class="mord">6</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mpunct">,</span></span></span></span> but the sum here is odd. The next pair to consider is <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo stretchy="false">(</mo><mn>480</mn><mo separator="true">,</mo><mn>2</mn><mo stretchy="false">)</mo><mo separator="true">,</mo></mrow><annotation encoding="application/x-tex">(480,2),</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">4</span><span class="mord">8</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">2</span><span class="mclose">)</span><span class="mpunct">,</span></span></span></span> which yields a potential maximal value of <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>=</mo><mn>210.</mn></mrow><annotation encoding="application/x-tex">n = 210.</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mord">1</span><span class="mord">0</span><span class="mord">.</span></span></span></span> But first we need to check which values of <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span></span></span></span> result:</p>
+
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mo>=</mo><mstyle displaystyle="true" scriptlevel="0"><mfrac><mrow><mn>635</mn><mo>±</mo><mn>239</mn></mrow><mn>438</mn></mfrac></mstyle><mo>⟹</mo><mi>a</mi><mo>=</mo><mstyle displaystyle="true" scriptlevel="0"><mfrac><mn>23</mn><mn>11</mn></mfrac></mstyle></mrow><annotation encoding="application/x-tex">a = \dfrac{635 \pm 239}{438} \Longrightarrow a = \dfrac{23}{11}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.00744em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">4</span><span class="mord">3</span><span class="mord">8</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">6</span><span class="mord">3</span><span class="mord">5</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">±</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">2</span><span class="mord">3</span><span class="mord">9</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">⟹</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.00744em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span><span class="mord">1</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span><span class="mord">3</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span> or <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mo>=</mo><mstyle displaystyle="true" scriptlevel="0"><mfrac><mn>18</mn><mn>19</mn></mfrac></mstyle><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">a = \dfrac{18}{19}.</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.00744em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span><span class="mord">9</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span><span class="mord">8</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord">.</span></span></span></span></p>
+
+<p>Now looking back at the original sum, we see that the domain conditions of the log function require that <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mo>&gt;</mo><mn>2.</mn></mrow><annotation encoding="application/x-tex">a \gt 2.</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mord">.</span></span></span></span> Thus with this value of <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span> we have exactly one valid rational solution for <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mo separator="true">,</mo></mrow><annotation encoding="application/x-tex">a,</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">a</span><span class="mpunct">,</span></span></span></span> namely <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mo>=</mo><mstyle displaystyle="true" scriptlevel="0"><mfrac><mn>23</mn><mn>11</mn></mfrac></mstyle><mo separator="true">,</mo></mrow><annotation encoding="application/x-tex">a = \dfrac{23}{11},</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.00744em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span><span class="mord">1</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span><span class="mord">3</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mpunct">,</span></span></span></span> and so the desired value for <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span> is <span class="katex"><span class="katex-mathml"><math><semantics><mrow><menclose notation="box"><mstyle scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0" displaystyle="true"><mn>210</mn></mstyle></mstyle></menclose><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">\boxed{210}.</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.32444em;vertical-align:-0.33999999999999997em;"></span><span class="mord"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9844400000000001em;"><span style="top:-3.32444em;"><span class="pstrut" style="height:3.32444em;"></span><span class="mord boxpad"><span class="mord"><span class="mord">2</span><span class="mord">1</span><span class="mord">0</span></span></span></span><span style="top:-2.98444em;"><span class="pstrut" style="height:3.32444em;"></span><span class="stretchy fbox" style="height:1.32444em;"></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.33999999999999997em;"><span></span></span></span></span></span><span class="mord">.</span></span></span></span></p>
+
+                                    
+                                
+                            </div>
+                        
+                    
+                </div>
+            </div>
+
+
+            
+            
+            
+                
+                    <div class="solution-footer hide-on-edit hide-on-delete row">
+                        
+                        
+                            
+                                
+                                
+                                <div class="reactions">
+                                    <span class="helpful">15 Helpful</span>
+                                    <span class="interesting">0 Interesting</span>
+                                    <span class="brilliant">0 Brilliant</span>
+                                    <span class="confused">0 Confused</span>
+                                </div>
+                                
+                            
+                        
+                    </div>
+                
+
+            
+
+
+
+            
+            
+
+        </div>
+
+        
+        
+
+
+        
+    </div>
+
+
+    
+    
+    
+        
+            <div class="discsol-comments comment-wrapper hide-form row">
+                
+                    <div class="cmp_6d91d250bb3eedd67d72c07d51b5ed20_id">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/template" id="comment-form-template">
+    <form method="post" action="https://brilliant.org/problems/now-theres-an-n/&lt;%=&#32;formUrl&#32;%&gt;"
+        class="comment-form<%- formName === 'edit_comment' ? ' edit-form' : '' %> clearfix row"
+        id="<%= formId %>"
+        data-controller="util/mathjax_loader:formPreloader">
+
+            <input type="hidden" name="csrfmiddlewaretoken" value="lBljAOV9Py4SYHrcmDOH3V1UZKQEix0yeN70NpQ1mg6pHbb2yznHK2CJ0x1fQyOm">
+
+            <input type="hidden" name="form_name" value="<%= formName %>">
+            <input type="hidden" name="page_key" value="assessment_public_solvable_logged_in">
+            <input type="hidden" name="version" value="<%- version %>">
+            <% if (commentId && !formIdParentId) { %>
+                <input type="hidden" name="existing_comment_id" value="<%- commentId %>">
+            <% } %>
+            <% if (paramKey) { %>
+                <input type="hidden" name="param_key" value="<%= paramKey %>">
+            <% } %>
+            <input type="hidden" name="parent_id" value="<%= parentId %>">
+
+            
+
+            <fieldset class="editor"
+                data-controller="util/autosave:controller"
+                data-autosave-key="<%= autosaveKey %>"
+                data-autosave-hours="3"
+                data-autosave-field="comment"
+                data-autosave-user="gTlCC4o6R8QzJ8FFw1BEZ0tfaYra2gtu">
+                    <p>
+                        <label for="id_text_<%- commentId %>">Text:</label>
+                        <textarea id="id_text_<%- commentId %>"
+                            placeholder="add a comment..."
+                            rows="1"
+                            cols="40"
+                            spellcheck="true"
+                            name="text"
+                            class="expand"><%- commentText %></textarea>
+                    </p>
+                    <%= errors %>
+            </fieldset>
+
+            <div class="comment-form-buttons col col-1">
+                
+                    <% if (topLevelDiscCommentForm) { %>
+                        <button type="submit" class="btn btn-accent btn-gray col col-1 col-last autosave-submit">Post</button>
+                        <a href="https://brilliant.org/math-formatting-guide/"
+                           class="formatting-guide-link"
+                           data-controller="app/comments:formattingGuideLink"
+                           data-target="#disc-formatting-guide">
+                                Formatting guide</a>
+                    <% } else { %>
+                        
+                            <button type="submit" class="btn btn-accent btn-gray col col-1 col-last autosave-submit">Post</button>
+                            <a href="now-theres-an-n.html#" class="cancel-edit-trigger col col-1 col-last<%- isEditingThis || commentFormSuccess ? ' hide' : '' %>">Cancel</a>
+                            
+                        
+                    <% } %>
+                
+            </div>
+    </form>
+</script>
+
+
+
+<div class="discsol-comments-wrapper row" id="comment-list-95769">
+
+    <a name="comments"></a>
+    
+
+    
+
+        <div class="disc-comments row" data-highlighted-comment-id="">
+
+            <div class="cmmnt-container level-0 clearfix row solcomment" data-level="0">
+
+                
+                
+
+
+                    
+
+                    
+
+                    <div
+                        class="cmmnt clearfix row comment-item"
+                        id="comment-a3f5120301e92"
+                        data-comment="120301"
+                    >
+
+                         
+
+                            
+
+                            <div class="comment-content row">
+                                
+
+                                <div class="hide-on-edit hide-on-delete comment-text-wrapper">
+
+                                    
+                                    <div class="text">
+                                        
+
+                                        <p>
+                                            
+
+                                            
+                                            A very nice solution.  Couldn't have said it much better myself.  </p>
+
+<p>Also, I haven't finished posting everyone's spiral questions because I've been super busy.  Should have a few more coming up today and in a few days.</p>
+
+<p>Btw, here's a little competition for the two of us.  Let's see who can reach 1000 followers first.  I'm at 994 and you're at 990, so I guess I have a slight head start :P  hehe.
+
+                                        </p>
+
+                                        
+                                            <div class="meta">
+                                                
+                                                    
+                                                        
+                                                            <a href="https://brilliant.org/profile/trevor-t668xm/"
+                                                                rel="nofollow"
+                                                                class="mini-profile author"
+                                                                data-id="XTwHRkXvAIXKejyQUwFbpD3IuISUn7O8"
+                                                                data-controller="app/mini_profiles:controller">
+                                                                    Trevor Arashiro
+                                                            </a>
+                                                        
+                                                        
+                                                    
+
+                                                    <span class="ts">
+                                                        - 6 years, 1 month ago
+                                                    </span>
+                                                
+
+                                                
+                                            </div>
+                                        
+
+                                        
+
+                                        
+    
+
+    
+
+
+                                    </div>
+
+                                    
+
+                                </div>
+
+                                
+                            </div>
+
+                         
+                    </div> 
+
+
+                    
+                        <div class="cmmnt-container level-1 solcomment clearfix" data-level="1">
+
+                            
+                            
+                                <div class="cmmnt reply-form-wrapper unhide_new_reply_120301 hide row">
+                                    
+                                        <p>Log in to reply</p>
+                                    
+                                </div>
+                            
+
+                            
+                
+
+
+                    
+
+                    
+
+                    <div
+                        class="cmmnt clearfix row comment-item"
+                        id="comment-a3f5120360e92"
+                        data-comment="120360"
+                    >
+
+                         
+
+                            
+
+                            <div class="comment-content row">
+                                
+
+                                <div class="hide-on-edit hide-on-delete comment-text-wrapper">
+
+                                    
+                                    <div class="text">
+                                        
+
+                                        <p>
+                                            
+
+                                            
+                                            Thanks! Again, a great problem. :D</p>
+
+<p>Yes, I had figured that you'd make the 1000 mark well ahead of me, but I've gained ground of late so that I've made a game of it. I figure that you still have a <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle displaystyle="true" scriptlevel="0"><mfrac><mn>2</mn><mi>π</mi></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\dfrac{2}{\pi}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.00744em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">π</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span> probability of winning, though. No doubt we'll be creating questions to mark the occasion. :)</p>
+
+<p>P.S.. That was an amazing performance by Rickie Fowler today at the TPC. He's finally had his breakout moment.
+
+                                        </p>
+
+                                        
+                                            <div class="meta">
+                                                
+                                                    
+                                                        
+                                                            <a href="https://brilliant.org/profile/brian-rk21ea/"
+                                                                rel="nofollow"
+                                                                class="mini-profile author"
+                                                                data-id="4w0Tpq7bHfBJU6a6Y8ZxzzWxip91UkCO"
+                                                                data-controller="app/mini_profiles:controller">
+                                                                    Brian Charlesworth
+                                                            </a>
+                                                        
+                                                        
+                                                    
+
+                                                    <span class="ts">
+                                                        - 6 years, 1 month ago
+                                                    </span>
+                                                
+
+                                                
+                                            </div>
+                                        
+
+                                        
+
+                                        
+    
+
+    
+
+
+                                    </div>
+
+                                    
+
+                                </div>
+
+                                
+                            </div>
+
+                         
+                    </div> 
+
+
+                    
+                        <div class="cmmnt-container level-2 solcomment clearfix" data-level="2">
+
+                            
+                            
+                                <div class="cmmnt reply-form-wrapper unhide_new_reply_120360 hide row">
+                                    
+                                        <p>Log in to reply</p>
+                                    
+                                </div>
+                            
+
+                            
+                
+
+
+                    
+
+                    
+
+                    <div
+                        class="cmmnt clearfix row comment-item"
+                        id="comment-a3f5120368e92"
+                        data-comment="120368"
+                    >
+
+                         
+
+                            
+
+                            <div class="comment-content row">
+                                
+
+                                <div class="hide-on-edit hide-on-delete comment-text-wrapper">
+
+                                    
+                                    <div class="text">
+                                        
+
+                                        <p>
+                                            
+
+                                            
+                                            Oh.my.gosh.</p>
+
+<p>I died when I saw that.   Birdie, eagle, birdie, birdie, par, birdie, par, birdie.  Unbelievable.  I've never done something like that.  But to pull that off in a tournament is truly amazing.</p>
+
+<p>Haha, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mfrac><mn>2</mn><mi>π</mi></mfrac></mrow><annotation encoding="application/x-tex">\frac{2}{\pi}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.190108em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.845108em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03588em;">π</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span> chance of winning.  However, it will be close, because eventough <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo><mo>&gt;</mo><mi>f</mi><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">f(T)&gt;f(B)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="mclose">)</span></span></span></span> at the moment, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>f</mi><mo mathvariant="normal">′</mo></msup><mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo><mo>&lt;</mo><msup><mi>f</mi><mo mathvariant="normal">′</mo></msup><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">f&#x27;(T)&lt;f&#x27;(B)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.001892em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.751892em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.001892em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.751892em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="mclose">)</span></span></span></span>. If you catch my lingo :P hehe.
+
+                                        </p>
+
+                                        
+                                            <div class="meta">
+                                                
+                                                    
+                                                        
+                                                            <a href="https://brilliant.org/profile/trevor-t668xm/"
+                                                                rel="nofollow"
+                                                                class="mini-profile author"
+                                                                data-id="XTwHRkXvAIXKejyQUwFbpD3IuISUn7O8"
+                                                                data-controller="app/mini_profiles:controller">
+                                                                    Trevor Arashiro
+                                                            </a>
+                                                        
+                                                        
+                                                    
+
+                                                    <span class="ts">
+                                                        - 6 years, 1 month ago
+                                                    </span>
+                                                
+
+                                                
+                                            </div>
+                                        
+
+                                        
+
+                                        
+    
+
+    
+
+
+                                    </div>
+
+                                    
+
+                                </div>
+
+                                
+                            </div>
+
+                         
+                    </div> 
+
+
+                    
+                        <div class="cmmnt-container level-3 solcomment clearfix">
+
+                            
+                            <div class="cmmnt reply-form-wrapper unhide_new_reply_120368 hide row">
+                                
+                                    
+                                
+                            </div>
+
+                        </div>
+                     
+
+                    
+
+                
+                 
+                        </div>
+                     
+
+                    
+
+                
+                
+                
+
+
+                    
+
+                    
+
+                    <div
+                        class="cmmnt clearfix row comment-item"
+                        id="comment-a3f5120563e92"
+                        data-comment="120563"
+                    >
+
+                         
+
+                            
+
+                            <div class="comment-content row">
+                                
+
+                                <div class="hide-on-edit hide-on-delete comment-text-wrapper">
+
+                                    
+                                    <div class="text">
+                                        
+
+                                        <p>
+                                            
+
+                                            
+                                            I just followed you ;). But the thing is, I am already following Brian Charlseworth sir. So... four more to go..
+
+                                        </p>
+
+                                        
+                                            <div class="meta">
+                                                
+                                                    
+                                                        
+                                                            <a href="https://brilliant.org/profile/raghav-qqkaup/"
+                                                                rel="nofollow"
+                                                                class="mini-profile author"
+                                                                data-id="R6gdbUTUHCOGOlh40rP810OTDTeOCoZh"
+                                                                data-controller="app/mini_profiles:controller">
+                                                                    Raghav Vaidyanathan
+                                                            </a>
+                                                        
+                                                        
+                                                    
+
+                                                    <span class="ts">
+                                                        - 6 years, 1 month ago
+                                                    </span>
+                                                
+
+                                                
+                                            </div>
+                                        
+
+                                        
+
+                                        
+    
+
+    
+
+
+                                    </div>
+
+                                    
+
+                                </div>
+
+                                
+                            </div>
+
+                         
+                    </div> 
+
+
+                    
+                        <div class="cmmnt-container level-2 solcomment clearfix" data-level="2">
+
+                            
+                            
+                                <div class="cmmnt reply-form-wrapper unhide_new_reply_120563 hide row">
+                                    
+                                        <p>Log in to reply</p>
+                                    
+                                </div>
+                            
+
+                            
+                
+
+
+                    
+
+                    
+
+                    <div
+                        class="cmmnt clearfix row comment-item"
+                        id="comment-a3f5120575e92"
+                        data-comment="120575"
+                    >
+
+                         
+
+                            
+
+                            <div class="comment-content row">
+                                
+
+                                <div class="hide-on-edit hide-on-delete comment-text-wrapper">
+
+                                    
+                                    <div class="text">
+                                        
+
+                                        <p>
+                                            
+
+                                            
+                                            Update: It's 997 to 990 now. My count has stalled, and my hopes for victory are fading fast; you now have a <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle displaystyle="true" scriptlevel="0"><mfrac><mn>3</mn><mi>π</mi></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\dfrac{3}{\pi}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.00744em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">π</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">3</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span> chance of winning. sigh....  I have a habit of coming 2nd, but I suppose that there are worse fates in life. :P
+
+                                        </p>
+
+                                        
+                                            <div class="meta">
+                                                
+                                                    
+                                                        
+                                                            <a href="https://brilliant.org/profile/brian-rk21ea/"
+                                                                rel="nofollow"
+                                                                class="mini-profile author"
+                                                                data-id="4w0Tpq7bHfBJU6a6Y8ZxzzWxip91UkCO"
+                                                                data-controller="app/mini_profiles:controller">
+                                                                    Brian Charlesworth
+                                                            </a>
+                                                        
+                                                        
+                                                    
+
+                                                    <span class="ts">
+                                                        - 6 years, 1 month ago
+                                                    </span>
+                                                
+
+                                                
+                                            </div>
+                                        
+
+                                        
+
+                                        
+    
+
+    
+
+
+                                    </div>
+
+                                    
+
+                                </div>
+
+                                
+                            </div>
+
+                         
+                    </div> 
+
+
+                    
+                        <div class="cmmnt-container level-3 solcomment clearfix">
+
+                            
+                            <div class="cmmnt reply-form-wrapper unhide_new_reply_120575 hide row">
+                                
+                                    
+                                
+                            </div>
+
+                        </div>
+                     
+
+                    
+
+                
+                 
+                        </div>
+                     
+
+                    
+
+                
+                 
+                        </div>
+                     
+
+                    
+
+                
+                
+                
+
+
+                    
+
+                    
+
+                    <div
+                        class="cmmnt clearfix row comment-item"
+                        id="comment-a3f5120266e92"
+                        data-comment="120266"
+                    >
+
+                         
+
+                            
+
+                            <div class="comment-content row">
+                                
+
+                                <div class="hide-on-edit hide-on-delete comment-text-wrapper">
+
+                                    
+                                    <div class="text">
+                                        
+
+                                        <p>
+                                            
+
+                                            
+                                            Very nicely explained solution,Sir.In 1st attempt i misunderstood "exactly 1" and </p>
+
+<p>used b^2-4ac=0 </p>
+
+<p>Btw is there any difference b/w solution &amp; root?
+
+                                        </p>
+
+                                        
+                                            <div class="meta">
+                                                
+                                                    
+                                                        
+                                                            <a href="https://brilliant.org/profile/ayush-zuo76y/"
+                                                                rel="nofollow"
+                                                                class="mini-profile author"
+                                                                data-id="3rwWgtuXq9t3FnFfvYwpd3i99rtrTFpU"
+                                                                data-controller="app/mini_profiles:controller">
+                                                                    Ayush Verma
+                                                            </a>
+                                                        
+                                                        
+                                                    
+
+                                                    <span class="ts">
+                                                        - 6 years, 1 month ago
+                                                    </span>
+                                                
+
+                                                
+                                            </div>
+                                        
+
+                                        
+
+                                        
+    
+
+    
+
+
+                                    </div>
+
+                                    
+
+                                </div>
+
+                                
+                            </div>
+
+                         
+                    </div> 
+
+
+                    
+                        <div class="cmmnt-container level-1 solcomment clearfix" data-level="1">
+
+                            
+                            
+                                <div class="cmmnt reply-form-wrapper unhide_new_reply_120266 hide row">
+                                    
+                                        <p>Log in to reply</p>
+                                    
+                                </div>
+                            
+
+                            
+                
+
+
+                    
+
+                    
+
+                    <div
+                        class="cmmnt clearfix row comment-item"
+                        id="comment-a3f5120270e92"
+                        data-comment="120270"
+                    >
+
+                         
+
+                            
+
+                            <div class="comment-content row">
+                                
+
+                                <div class="hide-on-edit hide-on-delete comment-text-wrapper">
+
+                                    
+                                    <div class="text">
+                                        
+
+                                        <p>
+                                            
+
+                                            
+                                            Thanks! Solution and root are essentially interchangeable, but the phrasing is a bit different. For example, the "solutions" of the equation <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>c</mi><mo>+</mo><mi>c</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">ax^{2} + bc + c = 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">a</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">b</span><span class="mord mathdefault">c</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">c</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span> are the same as the "roots" of the polynomial <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">ax^{2} + bx + c.</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">a</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">b</span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">c</span><span class="mord">.</span></span></span></span> In other words, when we talk about the roots of an expression it is implied that we equating that expression to <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0.</mn></mrow><annotation encoding="application/x-tex">0.</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span><span class="mord">.</span></span></span></span>
+
+                                        </p>
+
+                                        
+                                            <div class="meta">
+                                                
+                                                    
+                                                        
+                                                            <a href="https://brilliant.org/profile/brian-rk21ea/"
+                                                                rel="nofollow"
+                                                                class="mini-profile author"
+                                                                data-id="4w0Tpq7bHfBJU6a6Y8ZxzzWxip91UkCO"
+                                                                data-controller="app/mini_profiles:controller">
+                                                                    Brian Charlesworth
+                                                            </a>
+                                                        
+                                                        
+                                                    
+
+                                                    <span class="ts">
+                                                        - 6 years, 1 month ago
+                                                    </span>
+                                                
+
+                                                
+                                            </div>
+                                        
+
+                                        
+
+                                        
+    
+
+    
+
+
+                                    </div>
+
+                                    
+
+                                </div>
+
+                                
+                            </div>
+
+                         
+                    </div> 
+
+
+                    
+                        <div class="cmmnt-container level-2 solcomment clearfix" data-level="2">
+
+                            
+                            
+                                <div class="cmmnt reply-form-wrapper unhide_new_reply_120270 hide row">
+                                    
+                                        <p>Log in to reply</p>
+                                    
+                                </div>
+                            
+
+                            
+                
+
+
+                    
+
+                    
+
+                    <div
+                        class="cmmnt clearfix row comment-item"
+                        id="comment-a3f5120283e92"
+                        data-comment="120283"
+                    >
+
+                         
+
+                            
+
+                            <div class="comment-content row">
+                                
+
+                                <div class="hide-on-edit hide-on-delete comment-text-wrapper">
+
+                                    
+                                    <div class="text">
+                                        
+
+                                        <p>
+                                            
+
+                                            
+                                            Actually i asked this because i remember once someone told me that no. of solutions of an  eqn and no. of roots may be different  for example,
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mi>o</mi></mrow><annotation encoding="application/x-tex"> (x-1)^{2} (x-2)=o </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.1141079999999999em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">2</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">o</span></span></span></span></span> 
+no. of solutions = 2     (1&amp;2) </p>
+
+<p>no. of root =3   (two of them are equal)</p>
+
+<p>So,i want to know if this is correct or just a misconception?Thank you,Sir.
+
+                                        </p>
+
+                                        
+                                            <div class="meta">
+                                                
+                                                    
+                                                        
+                                                            <a href="https://brilliant.org/profile/ayush-zuo76y/"
+                                                                rel="nofollow"
+                                                                class="mini-profile author"
+                                                                data-id="3rwWgtuXq9t3FnFfvYwpd3i99rtrTFpU"
+                                                                data-controller="app/mini_profiles:controller">
+                                                                    Ayush Verma
+                                                            </a>
+                                                        
+                                                        
+                                                    
+
+                                                    <span class="ts">
+                                                        - 6 years, 1 month ago
+                                                    </span>
+                                                
+
+                                                
+                                            </div>
+                                        
+
+                                        
+
+                                        
+    
+
+    
+
+
+                                    </div>
+
+                                    
+
+                                </div>
+
+                                
+                            </div>
+
+                         
+                    </div> 
+
+
+                    
+                        <div class="cmmnt-container level-3 solcomment clearfix" data-level="3">
+
+                            
+                            
+                                <div class="cmmnt reply-form-wrapper unhide_new_reply_120283 hide row">
+                                    
+                                        <p>Log in to reply</p>
+                                    
+                                </div>
+                            
+
+                            
+                
+
+
+                    
+
+                    
+
+                    <div
+                        class="cmmnt clearfix row comment-item"
+                        id="comment-a3f5120286e92"
+                        data-comment="120286"
+                    >
+
+                         
+
+                            
+
+                            <div class="comment-content row">
+                                
+
+                                <div class="hide-on-edit hide-on-delete comment-text-wrapper">
+
+                                    
+                                    <div class="text">
+                                        
+
+                                        <p>
+                                            
+                                                <span class="reply-to">
+                                                    
+                                                        <a href="now-theres-an-n.html#comment-a3f5120283e92">
+                                                            @Ayush Verma</a>
+                                                    
+                                                    &ndash;
+                                                </span>
+                                            
+
+                                            
+                                            Ah, o.k.. Yes, in this case I would say that there are 2 solutions and 3 roots. I suppose we could also say that there are 2 distinct roots and solutions to make them the same value, but either phrasing would be valid.
+
+                                        </p>
+
+                                        
+                                            <div class="meta">
+                                                
+                                                    
+                                                        
+                                                            <a href="https://brilliant.org/profile/brian-rk21ea/"
+                                                                rel="nofollow"
+                                                                class="mini-profile author"
+                                                                data-id="4w0Tpq7bHfBJU6a6Y8ZxzzWxip91UkCO"
+                                                                data-controller="app/mini_profiles:controller">
+                                                                    Brian Charlesworth
+                                                            </a>
+                                                        
+                                                        
+                                                    
+
+                                                    <span class="ts">
+                                                        - 6 years, 1 month ago
+                                                    </span>
+                                                
+
+                                                
+                                            </div>
+                                        
+
+                                        
+
+                                        
+    
+
+    
+
+
+                                    </div>
+
+                                    
+
+                                </div>
+
+                                
+                            </div>
+
+                         
+                    </div> 
+
+
+                    
+                        <div class="cmmnt-container level-X solcomment clearfix">
+
+                            
+                            <div class="cmmnt reply-form-wrapper unhide_new_reply_120286 hide row">
+                                
+                                    
+                                
+                            </div>
+
+                        </div>
+                     
+
+                    
+
+                
+                 
+                        </div>
+                     
+
+                    
+
+                
+                 
+                        </div>
+                     
+
+                    
+
+                
+                
+                
+
+
+                    
+
+                    
+
+                    <div
+                        class="cmmnt clearfix row comment-item"
+                        id="comment-a3f5120299e92"
+                        data-comment="120299"
+                    >
+
+                         
+
+                            
+
+                            <div class="comment-content row">
+                                
+
+                                <div class="hide-on-edit hide-on-delete comment-text-wrapper">
+
+                                    
+                                    <div class="text">
+                                        
+
+                                        <p>
+                                            
+
+                                            
+                                            I intended on this problem being solved using <a target="_blank" rel="nofollow" href="https://brilliant.org/discussions/thread/maximum-possible-integer-square-root-polynomial/?from_notification=5955006#comment-a3f582265e92">this</a> but people always find ways around it :3. You can read up on it if you like.
+
+                                        </p>
+
+                                        
+                                            <div class="meta">
+                                                
+                                                    
+                                                        
+                                                            <a href="https://brilliant.org/profile/trevor-t668xm/"
+                                                                rel="nofollow"
+                                                                class="mini-profile author"
+                                                                data-id="XTwHRkXvAIXKejyQUwFbpD3IuISUn7O8"
+                                                                data-controller="app/mini_profiles:controller">
+                                                                    Trevor Arashiro
+                                                            </a>
+                                                        
+                                                        
+                                                    
+
+                                                    <span class="ts">
+                                                        - 6 years, 1 month ago
+                                                    </span>
+                                                
+
+                                                
+                                            </div>
+                                        
+
+                                        
+
+                                        
+    
+
+    
+
+
+                                    </div>
+
+                                    
+
+                                </div>
+
+                                
+                            </div>
+
+                         
+                    </div> 
+
+
+                    
+                        <div class="cmmnt-container level-2 solcomment clearfix">
+
+                            
+                            <div class="cmmnt reply-form-wrapper unhide_new_reply_120299 hide row">
+                                
+                                    
+                                
+                            </div>
+
+                        </div>
+                     
+
+                    
+
+                
+                 
+                        </div>
+                     
+
+                    
+
+                
+                
+                
+
+
+                    
+
+                    
+
+                    <div
+                        class="cmmnt clearfix row comment-item"
+                        id="comment-a3f5120458e92"
+                        data-comment="120458"
+                    >
+
+                         
+
+                            
+
+                            <div class="comment-content row">
+                                
+
+                                <div class="hide-on-edit hide-on-delete comment-text-wrapper">
+
+                                    
+                                    <div class="text">
+                                        
+
+                                        <p>
+                                            
+
+                                            
+                                            Nice Solution! I took a long time figuring out the last part i.e. the maximum solution.
+
+                                        </p>
+
+                                        
+                                            <div class="meta">
+                                                
+                                                    
+                                                        
+                                                            <a href="https://brilliant.org/profile/kartik-h6vehn/"
+                                                                rel="nofollow"
+                                                                class="mini-profile author"
+                                                                data-id="IIKZV6N6lQNispIkiUP5drEl88kdJbDD"
+                                                                data-controller="app/mini_profiles:controller">
+                                                                    Kartik Sharma
+                                                            </a>
+                                                        
+                                                        
+                                                    
+
+                                                    <span class="ts">
+                                                        - 6 years, 1 month ago
+                                                    </span>
+                                                
+
+                                                
+                                            </div>
+                                        
+
+                                        
+
+                                        
+    
+
+    
+
+
+                                    </div>
+
+                                    
+
+                                </div>
+
+                                
+                            </div>
+
+                         
+                    </div> 
+
+
+                    
+                        <div class="cmmnt-container level-1 solcomment clearfix" data-level="1">
+
+                            
+                            
+                                <div class="cmmnt reply-form-wrapper unhide_new_reply_120458 hide row">
+                                    
+                                        <p>Log in to reply</p>
+                                    
+                                </div>
+                            
+
+                            
+                
+
+
+                    
+
+                    
+
+                    <div
+                        class="cmmnt clearfix row comment-item"
+                        id="comment-a3f5120459e92"
+                        data-comment="120459"
+                    >
+
+                         
+
+                            
+
+                            <div class="comment-content row">
+                                
+
+                                <div class="hide-on-edit hide-on-delete comment-text-wrapper">
+
+                                    
+                                    <div class="text">
+                                        
+
+                                        <p>
+                                            
+
+                                            
+                                            A great problem Trevor!
+
+                                        </p>
+
+                                        
+                                            <div class="meta">
+                                                
+                                                    
+                                                        
+                                                            <a href="https://brilliant.org/profile/kartik-h6vehn/"
+                                                                rel="nofollow"
+                                                                class="mini-profile author"
+                                                                data-id="IIKZV6N6lQNispIkiUP5drEl88kdJbDD"
+                                                                data-controller="app/mini_profiles:controller">
+                                                                    Kartik Sharma
+                                                            </a>
+                                                        
+                                                        
+                                                    
+
+                                                    <span class="ts">
+                                                        - 6 years, 1 month ago
+                                                    </span>
+                                                
+
+                                                
+                                            </div>
+                                        
+
+                                        
+
+                                        
+    
+
+    
+
+
+                                    </div>
+
+                                    
+
+                                </div>
+
+                                
+                            </div>
+
+                         
+                    </div> 
+
+
+                    
+                        <div class="cmmnt-container level-2 solcomment clearfix" data-level="2">
+
+                            
+                            
+                                <div class="cmmnt reply-form-wrapper unhide_new_reply_120459 hide row">
+                                    
+                                        <p>Log in to reply</p>
+                                    
+                                </div>
+                            
+
+                            
+                
+
+
+                    
+
+                    
+
+                    <div
+                        class="cmmnt clearfix row comment-item"
+                        id="comment-a3f5120557e92"
+                        data-comment="120557"
+                    >
+
+                         
+
+                            
+
+                            <div class="comment-content row">
+                                
+
+                                <div class="hide-on-edit hide-on-delete comment-text-wrapper">
+
+                                    
+                                    <div class="text">
+                                        
+
+                                        <p>
+                                            
+
+                                            
+                                            Thank you!  Really appreciate this as I took quite a long time to make this problem :)
+
+                                        </p>
+
+                                        
+                                            <div class="meta">
+                                                
+                                                    
+                                                        
+                                                            <a href="https://brilliant.org/profile/trevor-t668xm/"
+                                                                rel="nofollow"
+                                                                class="mini-profile author"
+                                                                data-id="XTwHRkXvAIXKejyQUwFbpD3IuISUn7O8"
+                                                                data-controller="app/mini_profiles:controller">
+                                                                    Trevor Arashiro
+                                                            </a>
+                                                        
+                                                        
+                                                    
+
+                                                    <span class="ts">
+                                                        - 6 years, 1 month ago
+                                                    </span>
+                                                
+
+                                                
+                                            </div>
+                                        
+
+                                        
+
+                                        
+    
+
+    
+
+
+                                    </div>
+
+                                    
+
+                                </div>
+
+                                
+                            </div>
+
+                         
+                    </div> 
+
+
+                    
+                        <div class="cmmnt-container level-3 solcomment clearfix">
+
+                            
+                            <div class="cmmnt reply-form-wrapper unhide_new_reply_120557 hide row">
+                                
+                                    
+                                
+                            </div>
+
+                        </div>
+                     
+
+                    
+
+                
+                 
+                        </div>
+                     
+
+                    
+
+                
+                 
+                        </div>
+                     
+
+                    
+
+                
+                
+
+            </div> 
+        </div>
+    
+    
+</div>
+
+
+</div>
+                
+            </div>
+        
+    
+    
+
+</div> 
+
+        
+    
+
+
+    
+</div>
+</div>
+
+                    
+                </div>
+            </div>
+
+            
+        
+
+        
+            <div class="solv-disputes row hide" id="disputes-scrollable-container">
+                
+                    <div id="cmp_assessment_end_state_disputes_header_id">
+                        
+<div class="solv-end-state-header row">
+    
+    
+
+
+<div class="discsol-list-header row">
+    <h2>
+        
+            
+                0 pending reports
+            
+        
+    </h2>
+
+    
+        <h3>
+            
+                
+            
+        </h3>
+    
+</div>
+
+
+    
+    
+</div>
+
+                    </div>
+                
+
+                <div id="cmp_disputediscussions_publicsolvableadddisputepost_id">
+                    
+                </div>
+                <div id="cmp_disputediscussions_publicsolvabledisputelist_id">
+                    
+                </div>
+            </div>
+        
+
+        
+        
+            
+        
+
+        
+        
+            
+        
+
+        
+        
+    </div>
+
+
+
+    <div id="cmp_assessment_solvable_recommendations_id">
+        
+
+    <div class="solv-recommend-quizzes row">
+        <h2>Related quizzes</h2>
+
+        
+            
+
+
+    
+        <a href="https://brilliant.org/practice/telescoping-series/"
+            class="quiz concept col col-6">
+
+            <span class="concept-quiz-icon icon css-sprite-quiz"></span>
+            <h4>Telescoping Series - Sum</h4>
+            <span>Master the concepts!</span>
+
+            
+        </a>
+    
+
+
+
+        
+
+        
+            
+
+
+    
+        <a href="https://brilliant.org/practice/partial-fractions-level-4-5-challenges/"
+            class="quiz challenge col col-6 col-last active">
+
+            <span class="challenge-quiz-icon icon css-sprite-quiz"></span>
+            <h4>Partial Fractions: Level 4 Challenges</h4>
+            <span>Try related challenges!</span>
+
+            
+                <span class="recommended-text">Recommended</span>
+            
+        </a>
+    
+
+
+
+        
+    </div>
+
+    
+
+
+    </div>
+
+
+
+</div>
+
+    
+
+    
+
+
+
+    
+
+    
+        <div data-controller="util/mathjax_loader:controller"></div>
+    
+
+    
+
+
+<div 
+    data-analytics-live="true"
+    data-segment-key="ttlCaHQqOWtslnGGJ9W4bBeRpfYGksuD"
+    data-segment-url="https://in.brilliant.org"
+    data-amplitude-key="2d768258f0a7507203c7998a3e2678f0"
+    
+    
+    data-cio-key="9b180e7983a5a792f198"
+    data-cio-identify-data='{"id": "gTlCC4o6R8QzJ8FFw1BEZ0tfaYra2gtu", "email": "", "created_at": 1622063100, "account_type": "no_track_stats", "first_name": "", "last_name": "", "locale": "en", "profile_url_part": "", "auto_login_key": "", "unsubscribed": false, "global_unsubscribe_push_notif": false, "profile_info_last_updated": 1625282676, "current_paying_brilliant_squared": true, "current_brilliant_squared": true, "subscribed_at_mention_email": true, "subscribed_at_mention_push_notif": true, "subscribed_new_comment_email": true, "subscribed_new_comment_push_notif": true, "subscribed_new_solution_to_posted_problem_email": true, "subscribed_new_solution_to_posted_problem_push_notif": true, "subscribed_new_solution_on_incorrect_attempt_email": true, "subscribed_new_solution_on_incorrect_attempt_push_notif": false, "subscribed_new_follower_email": true, "subscribed_new_follower_push_notif": true, "subscribed_new_reshare_email": true, "subscribed_new_reshare_push_notif": false, "subscribed_new_favorite_email": true, "subscribed_new_favorite_push_notif": false, "subscribed_close_to_leveling_up_email": true, "subscribed_close_to_leveling_up_push_notif": false, "subscribed_leveled_up_email": true, "subscribed_leveled_up_push_notif": true, "subscribed_maintain_streak_email": true, "subscribed_maintain_streak_push_notif": true, "subscribed_finish_practice_reminder_email": true, "subscribed_finish_practice_reminder_push_notif": true, "subscribed_news_and_announcements_email": true, "subscribed_news_and_announcements_push_notif": true, "subscribed_interesting_community_problems_email": true, "subscribed_interesting_community_problems_push_notif": true, "subscribed_interesting_opportunities_email": true, "subscribed_interesting_opportunities_push_notif": true, "subscribed_community_activity_email": true, "subscribed_community_activity_push_notif": true, "subscribed_hasnt_unsubscribed_from_hundred_day_email": true, "subscribed_hundred_day_challenge_email": false, "subscribed_reminder_for_recurring_subscription_payments": false, "user_type": "student", "country": "USA", "tried_a_solvable": false, "has_correct_try": false, "has_fb_connected": false, "birthday_day_start_utc": 524707200, "timezone": "America/Los_Angeles", "approx_utc_offset": -7.0, "ab_test__send_startalk_welcome_email_04_2018": false, "ab_test__reduce_nux_email_volumes_2018_08": false, "is_discussions_moderator": false, "has_app_installed_currently": false, "has_android_installed_currently": false, "has_ios_installed_currently": false, "num_dq_ps_tt_viewed_aka_atmpt_mde": 1492, "num_dq_ps_tt_guess_aka_trs_mde": 0, "num_dq_ps_tt_correct_aka_atmpt_slv": -2}'
+    data-analytics-identity="gTlCC4o6R8QzJ8FFw1BEZ0tfaYra2gtu"
+    data-analytics-super-properties='{"locale": "en", "account_type": "no_track_stats", "debug": false, "client": "desktop-browser", "sessionid": "umjhnc", "user_agent": "Wget/1.19.4 (linux-gnu)", "identity": "gTlCC4o6R8QzJ8FFw1BEZ0tfaYra2gtu", "anon_ident_latest": "KeVumaZDKE0o1avnZp6AnKzfZa4kTw7a", "has_fb_connected": false, "join_ts": "2021-05-26T21:05:00.166711+00:00", "join_date": "2021-05-26", "join_month": "May 2021", "last_login": "2021-06-02 18:37:38.985318+00:00", "has_premium": true, "tries_made": 0, "max_level": 0, "createdAt": 1622063100, "ab_test__send_startalk_welcome_email_04_2018": false, "ab_test__reduce_nux_email_volumes_2018_08": false}'
+    data-analytics-user-properties='{"exp__chargebee_gift_09_2020": "control", "exp__nux_onboarding_03_2021": "specific_paths", "exp__signup_modal_one_tap_06_2021": "control", "exp__logged_out_coupon_banners_04_2021": "experiment", "exp__chargebee_paywall_mature_06_2021": "control", "exp__cancellation_updates_06_2020": "experiment", "exp__chargebee_paywall_08_2020_round_3": "chargebee", "exp__chargebee_group_09_2020": "control", "exp__v2_sem_landing_banner_experiment_05_2021": "control", "exp__paywall_redesign_02_2021": "control", "exp__logged_in_premium_banners_04_2021": "control", "exp__highlight_1st_lesson_03_2021": "experiment", "exp__sem_landing_banner_experiment_05_2021": "control", "exp__paywall_redesign_02_2021_v2": "control", "exp__signup_modal_one_tap_06_2021_v2": "experiment"}'
+    data-facebook-ad-pixel-id="712046235504105"
+    data-google-ad-pixel-id="1007657493"
+    data-ltv-event-id="0"
+    data-ltv-event-ltv=""
+    data-ltv-event-currency=""
+    data-ltv-event-interval=""
+    data-ltv-event-confirm-url=""
+    data-send-ga-trial-subscription-event=""
+
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+        data-tries="0"
+        data-level="0"
+        data-content-type="solvable" data-slug="now-theres-an-n" data-topic="calculus"
+        
+    
+    >
+        <div class="" data-ax-name="sign_of_life" data-ax-properties='{"path": "/problems/now-theres-an-n/", "full_path": "/problems/now-theres-an-n/", "method": "GET", "ajax": false, "from_request": true, "is_android": false}'></div>
+<div class="" data-ax-name="gtag__sign_of_life" data-ax-properties='{"gtag_value__attempts_all_time": 1492, "path": "/problems/now-theres-an-n/", "full_path": "/problems/now-theres-an-n/", "method": "GET", "ajax": false, "from_request": true, "is_android": false}'></div>
+</div>
+
+
+    
+        
+
+    <div data-controller="util/branch:init"
+        
+        data-branch-key="key_live_hchs2frj8AeD0WKiFpCVunopxFc92aiU">
+
+        
+    </div>
+
+
+    
+
+    
+        <div id="footer-notifs">
+            
+
+
+    
+        
+
+            
+            
+                <div id="custom-front-chat-launcher"
+    class="hide"
+    data-controller="app/front_chat:launcher"
+    
+    
+    
+        data-email=""
+        data-name=""
+        data-user-hash="4834d98239b3ac908d6f18b727211444b80b8bd18a697f3018404dceb48ec05f"
+    
+    data-token="9ee2a72511f80ebb85b8415fad5f79b5">
+
+        <span class="open css-sprite-global"></span>
+        <span class="close css-sprite-global"></span>
+        <span class="unread-message-counter"></span>
+        <span class="spinner"></span>
+
+</div>
+
+            
+            
+
+        
+
+    
+    
+
+
+            
+                
+                
+
+
+
+
+            
+        </div>
+    
+
+</div>
+
+
+    
+        
+    
+        <div class="site-footer row">
+            
+            
+    
+        
+                <div class="apps-footer row">
+    <a href="https://itunes.apple.com/app/apple-store/id913335252?pt=105095803&ct=brilliant_website_footer&mt=8"
+        rel="nofollow"
+        class="app-store-badge css-sprite-global ax-click"
+        data-ax-id="clicked_ios_app_link_from_homepage"
+        data-ax-type="link">
+            Practice math and science questions on the Brilliant iOS app.</a>
+    <a href="https://play.google.com/store/apps/details?id=org.brilliant.android&referrer=utm_source%3Dbrilliant%26utm_medium%3Dsite%26utm_campaign%3Dplaystore_full_footer_icon"
+        rel="nofollow"
+        class="google-play-badge css-sprite-global">
+            Practice math and science questions on the Brilliant Android app.</a>
+</div>
+
+                
+
+<ul class="site-footer-main unstyled">
+    
+        <li class="social">
+            <a href="https://twitter.com/brilliantorg"
+                rel="nofollow"
+                class="css-sprite-third-party tw"></a>
+        </li>
+        <li class="social">
+            <a href="https://www.facebook.com/brilliantorg"
+                rel="nofollow"
+                class="css-sprite-third-party fb"></a>
+        </li>
+        
+    
+
+    <li><a href="https://brilliant.org/about/">
+        About</a></li>
+
+    <li><a href="https://brilliant.org/careers/">
+        Careers</a></li>
+
+    
+        <li><a href="https://brilliant.org/testimonials/">
+            Testimonials</a></li>
+    
+
+    
+
+    <li><a href="https://brilliant.org/help/">
+        Help</a></li>
+
+    <li><a href="https://brilliant.org/terms-of-use/" rel="nofollow">
+        Terms</a></li>
+
+    <li><a href="https://brilliant.org/privacy/" rel="nofollow">
+        Privacy</a></li>
+
+    <li><a href="https://brilliant.org/ccpa-policy/" rel="nofollow">
+        California Privacy Policy</a></li>
+
+    
+
+    <li>&copy; Brilliant 2021</li>
+</ul>
+
+            
+    
+
+        </div>
+    
+
+    
+
+
+
+
+
+
+<div id="default-ajax-error"
+    class="hide"
+    data-error-title="Error"
+    data-error-content="We encountered an error while talking to our servers. Refresh the page and try again in a few seconds. If the problem persists, please <a href='mailto:support@brilliant.org'>email us</a>."
+    data-timeout-content="That action is taking longer than expected. This is likely due to network issues. Please try again in a few seconds, and if the problem persists, <a href='mailto:support@brilliant.org'>send us an email</a>.">
+</div>
+
+
+    <script type="text/javascript">
+        window.VERSIONS = {
+            
+        } ;
+    </script>
+
+
+    
+        
+    
+    
+
+
+<script type="text/javascript">
+    var oldonload = window.onload || function () {};
+    window.onload = function () {
+        window.isLoaded = true;
+        oldonload.apply(this);
+    };
+
+    Raven.config('https://7a3209face864b4681f7aefb4199d5ab@sentry.brilliant.org/3', {
+        tags: {
+            anonymous: false,
+            b2: true,
+            
+                client: 'desktop-browser'
+            
+        },
+        whitelistUrls: [
+            /brilliant\.org/,
+            /ds055uzetaobb\.cloudfront\.net/,
+            /d18l82el6cdm1i\.cloudfront\.net/,
+        ],
+    }).install();
+
+    
+        Raven.setUserContext({ id: 12320532 });
+    
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="../../site_media/build/dist/brilliant_vendors.60a88b6eecaf1741b17e.js" type="text/javascript"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="../../site_media/build/dist/brilliant_entry.6361249372a78abf9b13.js" type="text/javascript"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+        
+    
+
+    
+    
+<div id="fb-root"></div>
+<script>
+noop = function() {
+    FB.init({
+        appId: '326254770799145',
+        version: 'v5.0',
+        status: true,
+        xfbml: true,
+        frictionlessRequests: true
+    });
+
+    
+    window.fb_auth_status=function(c){
+        c=c||function(){};
+        FB.getLoginStatus(function(r){
+            if(r.status==='connected'){c(true,r);}
+            else{c(false,r);}
+        });
+    };
+    
+    window._fb_status=window._fb_status||[];
+    var i=0,l=_fb_status.length;
+    for(i;i<l;i++){fb_auth_status(_fb_status[i]);}
+    _fb_status=[];
+};
+
+(function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+});
+</script>
+
+
+    
+    
+
+    
+
+    
+        
+            
+
+    <div class="nf-feeditem-modal hide" id="nf-feeditem-modal">
+
+        <div class="nf-modal-close close" id="nf-modal-close">&times;</div>
+
+        <div class="nf-modal-loading">
+            <div class="logo"></div>
+            <div class="stripe"></div>
+            <p class="solvable-text">Problem Loading...</p>
+            <p class="note-text">Note Loading...</p>
+            <p class="set-text">Set Loading...</p>
+        </div>
+
+        <div class="nf-feeditem-modal-wrapper">
+            <div class="nf-solvable-modal-content nf-modal-content solv-modal clearfix"
+                id="cmp_assessment_modal_public_solvable_component_id"></div>
+            <div class="nf-post-modal-content nf-modal-content newdisc-single"
+                id="cmp_discussions_modal_single_component_id"></div>
+        </div>
+    </div>
+
+
+        
+    
+
+    </body>
+</html>
+
+
